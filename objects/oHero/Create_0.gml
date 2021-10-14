@@ -7,6 +7,7 @@ followers = irandom_range(5,20);
 current_followers = 0;
 food = 10;
 popularity = 100;
+pop_max = 180;
 lineage = 4;
 follower_iterate = followers;
 update = 0;
