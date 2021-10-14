@@ -4,7 +4,7 @@ button = "Continue";
 
 
 impact_name = ["Intelligence","Followers","Food","popularity"];
-impacts = [20,6,20,90,"",0];
+impacts = [0,0,0,0,"",0];
 
 start = 1;
 

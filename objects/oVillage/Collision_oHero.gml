@@ -17,6 +17,7 @@ if instance_exists(oTextbox_Result){
 		oTextbox_Result.content = option_b_result;
 		oTextbox_Result.impacts = option_b_impacts;
 		
+		
 	}
 	if (oHero.selected == option_c){
 		

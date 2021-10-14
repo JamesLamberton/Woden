@@ -1,13 +1,16 @@
 {
   "spriteId": {
-    "name": "sHero_Idle",
-    "path": "sprites/sHero_Idle/sHero_Idle.yy",
+    "name": "sEncounter",
+    "path": "sprites/sEncounter/sEncounter.yy",
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "oEncounter",
+    "path": "objects/oEncounter/oEncounter.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -22,16 +25,17 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"oHero","path":"objects/oHero/oHero.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Band",
-    "path": "folders/Objects/Band.yy",
+    "name": "Encounters",
+    "path": "folders/Objects/Encounters.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oHero",
+  "name": "oGuidance",
   "tags": [],
   "resourceType": "GMObject",
 }

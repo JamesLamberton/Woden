@@ -28,8 +28,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Encounters",
+    "path": "folders/Objects/Encounters.yy",
   },
   "resourceVersion": "1.0",
   "name": "oEncounter",

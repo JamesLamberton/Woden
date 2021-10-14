@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sHero_Idle",
-    "path": "sprites/sHero_Idle/sHero_Idle.yy",
+    "name": "sTextbox",
+    "path": "sprites/sTextbox/sTextbox.yy",
   },
   "solid": false,
   "visible": true,
@@ -22,16 +22,17 @@
   "physicsShapePoints": [],
   "eventList": [
     {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":64,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Band",
-    "path": "folders/Objects/Band.yy",
+    "name": "UI_Text",
+    "path": "folders/Objects/UI_Text.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oHero",
+  "name": "oTextbox_Guide",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -1,12 +1,22 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if moving {
+	
+if moving{
 	sprite_index = sHero_Walk;
 }
+else if prologue{
+	sprite_index = sHero_Walk;
+	x += hsp;
+	}
 else {
 	sprite_index = sHero_Idle;
 }
+
+
+//else{
+//	sprite_index = sHero_Idle;
+//}
 
 for (var i = 0; i < follower_iterate; i += 1){
 	follower_iterate -= 1;
@@ -41,7 +51,7 @@ if keyboard_check_pressed(vk_enter){
 }
 
 // kill hero
-if (intelligence <= 0) or (popularity <= 0) or (old_age == 7) or (death and oEncounter.eContinue and oEncounter.collision){
+if !prologue and ((intelligence <= 0) or (popularity <= 0) or (old_age == 7) or (death and oEncounter.eContinue and oEncounter.collision)){
 	death = 0;
 	if (lineage < 2){
 		//you lose

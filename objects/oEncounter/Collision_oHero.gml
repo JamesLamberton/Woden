@@ -19,7 +19,6 @@ if eResult{
 if eContinue{
 	oHero.moving = 1;
 	collision = 1;	
-	oHero.age += 1;
 	oHero.food -= ceil(oHero.followers/10);
 	if (oHero.age >= 80){
 	oHero.popularity -= 10;

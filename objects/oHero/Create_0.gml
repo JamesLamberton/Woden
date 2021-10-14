@@ -1,14 +1,16 @@
 /// @desc Our Beginning Hero, Sigi
 
-moving = 1;
+moving = 0;
+prologue = 1;
+hsp = 3;
 age = 25;
-intelligence = 17;
-followers = irandom_range(5,20);
+intelligence = 20;
+followers = 0;
 current_followers = 0;
-food = 10;
-popularity = 100;
+food = 20;
+popularity = 90;
 pop_max = 180;
-lineage = 4;
+lineage = 1;
 follower_iterate = followers;
 update = 0;
 name_list = ["Sigi","Rerir","Volsung","Sigmund"];
