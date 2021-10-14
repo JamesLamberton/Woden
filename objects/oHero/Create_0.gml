@@ -4,6 +4,7 @@ moving = 1;
 age = 25;
 intelligence = 17;
 followers = irandom_range(5,20);
+current_followers = 0;
 food = 10;
 popularity = 100;
 lineage = 4;
@@ -15,5 +16,6 @@ order = 0;
 name = name_list[order];
 title = title_list[order];
 old_age = 0;
-
-	
+selected = "";
+inst = 0;
+death = 0;

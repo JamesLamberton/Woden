@@ -10,8 +10,9 @@ else {
 
 for (var i = 0; i < follower_iterate; i += 1){
 	follower_iterate -= 1;
-	follower = instance_create_layer(self.x - 30 - random_range(0,500) ,self.y,"Instances",oFollower);
+	follower = instance_create_layer(self.x - 30 - random_range(0,480) ,self.y,"Instances",oFollower);
 	follower.image_index = random_range(1,7);
+	current_followers += 1
 }
 
 if keyboard_check_pressed(vk_space){
@@ -26,6 +27,8 @@ if keyboard_check_pressed(vk_enter){
 	//kill hero
 	if (lineage < 2){
 		//you lose
+		moving = 0;
+		instance_create_layer(1366/2,480,"Text",oTextbox_Dead);
 		
 	}
 	else{
@@ -37,12 +40,13 @@ if keyboard_check_pressed(vk_enter){
 	}
 }
 
-
-if (intelligence <= 0) or (popularity <= 0) or (old_age == 7){
-		//kill hero
+// kill hero
+if (intelligence <= 0) or (popularity <= 0) or (old_age == 7) or (death and oEncounter.eContinue and oEncounter.collision){
+	death = 0;
 	if (lineage < 2){
 		//you lose
-		
+		moving = 0;
+		instance_create_layer(1366/2,480,"Text",oTextbox_Dead);
 	}
 	else{
 	order += 1;
@@ -59,3 +63,13 @@ if (intelligence <= 0) or (popularity <= 0) or (old_age == 7){
 	
 }
 
+if (current_followers > followers){
+	inst = instance_find(oFollower, irandom(instance_number(oFollower) - 1));
+	instance_destroy(inst);
+	current_followers -= 1;
+}
+if (current_followers < followers){
+	follower = instance_create_layer(self.x - 30 - random_range(0,480) ,self.y,"Instances",oFollower);
+	follower.image_index = random_range(1,7);
+	current_followers += 1;
+}

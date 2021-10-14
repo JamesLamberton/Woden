@@ -1,9 +1,9 @@
 draw_set_font(Norse_Font);
 
 draw_set_halign(fa_left);
-draw_text_ext_transformed(70,y+30,title,1,600,5,5,0);
+draw_text_ext_transformed(70,y+20,title,1,600,3,3,0);
 draw_set_font(arial);
-draw_text_ext_transformed(70,y+100,content,20,700,1,1,0);
+draw_text_ext_transformed(70,y+80,content,20,750,1,1,0);
 
 
 
@@ -19,8 +19,9 @@ if point_in_rectangle(mousex,mousey,850,y+100,850+string_width(option_a),y+100+s
 	draw_set_colour(c_orange);
 	draw_text(850,y+100,option_a);
 	if left_click{
-		selected = option_a;
-		oEncounter.eContinue = 1;
+		mouse_click = 1;
+		oHero.selected = option_a;
+		oEncounter.eResult = 1;
 	}
 	
 }
@@ -28,8 +29,9 @@ if point_in_rectangle(mousex,mousey,850,y+150,850+string_width(option_b),y+150+s
 	draw_set_colour(c_orange);
 	draw_text(850,y+150,option_b);
 	if left_click{
-		selected = option_b;
-		oEncounter.eContinue = 1;
+		mouse_click = 1;
+		oHero.selected = option_b;
+		oEncounter.eResult = 1;
 	}
 	
 }
@@ -37,8 +39,9 @@ if point_in_rectangle(mousex,mousey,850,y+200,850+string_width(option_c),y+200+s
 	draw_set_colour(c_orange);
 	draw_text(850,y+200,option_c);
 	if left_click{
-		selected = option_c;
-		oEncounter.eContinue = 1;
+		mouse_click = 1;
+		oHero.selected = option_c;
+		oEncounter.eResult = 1;
 		
 	}
 	
