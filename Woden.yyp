@@ -29,6 +29,7 @@
     {"id":{"name":"oLineageCount","path":"objects/oLineageCount/oLineageCount.yy",},"order":4,},
     {"id":{"name":"popularity_metre","path":"sprites/popularity_metre/popularity_metre.yy",},"order":2,},
     {"id":{"name":"oTextbox_Dead","path":"objects/oTextbox_Dead/oTextbox_Dead.yy",},"order":12,},
+    {"id":{"name":"oVillage","path":"objects/oVillage/oVillage.yy",},"order":18,},
     {"id":{"name":"oTextbox_Result","path":"objects/oTextbox_Result/oTextbox_Result.yy",},"order":11,},
     {"id":{"name":"oTextbox","path":"objects/oTextbox/oTextbox.yy",},"order":10,},
     {"id":{"name":"sGround","path":"sprites/sGround/sGround.yy",},"order":0,},

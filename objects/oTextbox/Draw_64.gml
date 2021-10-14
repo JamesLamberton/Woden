@@ -7,9 +7,9 @@ draw_text_ext_transformed(70,y+80,content,20,750,1,1,0);
 
 
 
-draw_text(850,y+100,option_a);
-draw_text(850,y+150,option_b);
-draw_text(850,y+200,option_c);
+draw_text_ext(850,y+100,option_a,20,450);
+draw_text_ext(850,y+150,option_b,20,450);
+draw_text_ext(850,y+200,option_c,20,450);
 
 var mousex = device_mouse_x_to_gui(0);
 var mousey = device_mouse_y_to_gui(0);
@@ -17,7 +17,7 @@ var left_click = mouse_check_button_pressed(mb_left);
 
 if point_in_rectangle(mousex,mousey,850,y+100,850+string_width(option_a),y+100+string_height(option_a)){
 	draw_set_colour(c_orange);
-	draw_text(850,y+100,option_a);
+	draw_text_ext(850,y+100,option_a,20,450);
 	if left_click{
 		mouse_click = 1;
 		oHero.selected = option_a;
@@ -27,7 +27,7 @@ if point_in_rectangle(mousex,mousey,850,y+100,850+string_width(option_a),y+100+s
 }
 if point_in_rectangle(mousex,mousey,850,y+150,850+string_width(option_b),y+150+string_height(option_b)){
 	draw_set_colour(c_orange);
-	draw_text(850,y+150,option_b);
+	draw_text_ext(850,y+150,option_b,20,450);
 	if left_click{
 		mouse_click = 1;
 		oHero.selected = option_b;
@@ -37,7 +37,7 @@ if point_in_rectangle(mousex,mousey,850,y+150,850+string_width(option_b),y+150+s
 }
 if point_in_rectangle(mousex,mousey,850,y+200,850+string_width(option_c),y+200+string_height(option_c)){
 	draw_set_colour(c_orange);
-	draw_text(850,y+200,option_c);
+	draw_text_ext(850,y+200,option_c,20,450);
 	if left_click{
 		mouse_click = 1;
 		oHero.selected = option_c;
