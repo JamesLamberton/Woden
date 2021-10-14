@@ -19,3 +19,4 @@ old_age = 0;
 selected = "";
 inst = 0;
 death = 0;
+bonus = 0;

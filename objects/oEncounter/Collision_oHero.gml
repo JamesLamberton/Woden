@@ -17,7 +17,6 @@ if eResult{
 
 
 if eContinue{
-	x += 1000;
 	oHero.moving = 1;
 	collision = 1;	
 	oHero.age += 1;
@@ -32,6 +31,8 @@ if eContinue{
 		oHero.followers = ceil(oHero.followers * 0.75);
 		
 	}
+	instance_destroy();
+	oSpawner.alarm[0] = 1;
 	
 }
 

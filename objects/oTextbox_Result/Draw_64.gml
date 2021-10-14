@@ -35,11 +35,11 @@ for (var i = 0; i < 4; i++){
 		space += 1;
 	}	
 }
-Bonus = impact_name[4];
 Bonus_type = impacts[4];
+Bonus_amount = impacts[5];
 if (Bonus_type != ""){
 	draw_set_colour(c_white);
 	draw_set_halign(fa_left);
-	draw_text(1000,y+100+30*space,string(Bonus)+": "+string(Bonus_type));	
+	draw_text(1000,y+100+30*space,"Bonus: "+string(Bonus_type));	
 }
 

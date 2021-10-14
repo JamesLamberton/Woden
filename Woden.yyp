@@ -20,6 +20,7 @@
     {"id":{"name":"sHero_Idle","path":"sprites/sHero_Idle/sHero_Idle.yy",},"order":0,},
     {"id":{"name":"Follower_Walk","path":"sprites/Follower_Walk/Follower_Walk.yy",},"order":0,},
     {"id":{"name":"arial","path":"fonts/arial/arial.yy",},"order":1,},
+    {"id":{"name":"oSpawner","path":"objects/oSpawner/oSpawner.yy",},"order":19,},
     {"id":{"name":"Follower_Walk_2","path":"sprites/Follower_Walk_2/Follower_Walk_2.yy",},"order":1,},
     {"id":{"name":"oHero","path":"objects/oHero/oHero.yy",},"order":0,},
     {"id":{"name":"oMysteriousMan","path":"objects/oMysteriousMan/oMysteriousMan.yy",},"order":17,},
