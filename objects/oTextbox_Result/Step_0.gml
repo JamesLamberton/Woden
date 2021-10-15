@@ -9,7 +9,13 @@ if start{
 		oHero.popularity = oHero.pop_max;
 	
 	}
+	if (impacts[4] == "A son"){
+		oHero.son += 1;
+		oHero.lineage += 1;
+	}
+	else{
 	oHero.bonus += impacts[5];
+	}
 	start = 0;
 	//button = "Continue";
 }

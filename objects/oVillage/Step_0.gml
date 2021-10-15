@@ -19,7 +19,31 @@ recruits = ceil(oHero.popularity/5);
 option_a_result =  oHero.name+"'s popularity amoung the general populace result in "+string(recruits)+" eager and loyal warriors for the band."
 option_a_impacts = [0,recruits,-5,5,"",0];
 option_b_result = "While unnapreciated, settling for the winter allows food stocks to replenish and knowledge to be gained. The men and the people of the "+type+" become disgruntled with one another and all of them see less of "+oHero.name+" for the situation. "
-option_b_impacts = [2,2,15,-10,"",0]
+if !oHero.wife{
+	if irandom_range(-3,1) and (oHero.popularity >= 90){
+		option_b_result = option_b_result + "Showing respect towards the Volsung name, the leader of "+full_name+" offers his daughter to be "+oHero.name+"'s bride.  ";
+		oHero.wife += 1;
+		
+		option_b_impacts = [2,2,15,+5,"",0]
+		
+	}
+	else{
+		option_b_impacts = [2,2,15,-15,"",0]	
+	}
+	
+}
+else{
+	if irandom_range(-1,1){
+		option_b_result = option_b_result + "The time to rest allows bonds to be made between "+oHero.name+" and his wife. Not long into the stay, the Volsung family are blessed with a son; "+oHero.son_name+". The men rejoice as the Volsung family strengthens and follows the path to greatness. Many men from "+full_name+" flock to the band in hopes to see the Age of "+oHero.son_name+".";
+	}
+	else{
+		option_b_impacts = [0,10,15,+15,"A son",1]	
+	}
+}
+
+
+
+
 
 option_c_result_sucess = "Guided by Woden, "+oHero.name+"'s army tears through "+full_name+", leaving nothing but rubble and the message to others that the Volsungs are coming, and will not be stopped.";
 option_c_impacts = [0,-size/2+oHero.bonus*5,ceil(size/3),ceil(size/3),"",0];

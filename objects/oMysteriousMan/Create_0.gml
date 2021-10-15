@@ -1,6 +1,6 @@
 title = "The Mysterious Man";
 content = oHero.name+" and his band encounter a cloaked figure, dressed head to toe in heavy black rags that shift and slither as if alive itself. His face covered but for two peering sockets for eyes that sank into the souls around him. " + oHero.name +" felt uneasy upon the sight of the man, questioning the man as to why he had approached his band. The man's whispers were painful and breath foul as he preached: \n\n 'The Dead do not wait for those who bare the rags.' \n \n He stretched an arm and his weighted rags extended toward "+oHero.name+", almost in offering."
-
+toggle = 1;
 event_inherited();
 option_a = "Accept his curse, and welcome him into the band.";
 option_b = "Decline his gift, and refuse the power.";

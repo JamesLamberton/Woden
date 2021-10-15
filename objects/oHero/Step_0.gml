@@ -46,12 +46,18 @@ if keyboard_check_pressed(vk_enter){
 	lineage -= 1;
 	name = name_list[order];
 	title = title_list[order];
-		
+	if (order > 3){
+	son_name = name_list[order+1];
+	}
+	else{
+		order = 0;
+	}
+		son = 0;
 	}
 }
 
 // kill hero
-if !prologue and ((intelligence <= 0) or (popularity <= 0) or (old_age == 7) or (death and oEncounter.eContinue and oEncounter.collision)){
+if !prologue and prologue_end and ((intelligence <= 0) or (popularity <= 0) or (old_age == 7) or (death and oEncounter.eContinue and oEncounter.collision)){
 	death = 0;
 	if (lineage < 2){
 		//you lose
@@ -63,6 +69,13 @@ if !prologue and ((intelligence <= 0) or (popularity <= 0) or (old_age == 7) or 
 	lineage -= 1;
 	name = name_list[order];
 	title = title_list[order];
+	if (order > 3){
+	son_name = name_list[order+1];
+	}
+	else{
+		order = 0;
+	}
+	son = 0;
 	age -= 20;
 	intelligence = 20;
 	popularity = 100;
