@@ -7,3 +7,9 @@ if (x <= -52){
 	x += 1500;	
 	
 }
+
+if instance_exists(oWoden){
+	if oWoden.wMoving and !oWoden.outro{
+		x -= hsp
+	}
+}

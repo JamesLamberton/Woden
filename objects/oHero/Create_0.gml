@@ -1,7 +1,7 @@
 /// @desc Our Beginning Hero, Sigi
-
+oToggle = 1;
 moving = 0;
-prologue = 1;
+prologue = 0;
 prologue_end = 0;
 hsp = 3;
 age = 25;
@@ -12,7 +12,7 @@ food = 0;
 popularity = 0;
 pop_max = 180;
 lineage = 1;
-follower_iterate = followers;
+moveToggle = 1;
 update = 0;
 name_list = ["Sigi","Rerir","Volsung","Sigmund"];
 title_list = ["The Outlaw","The Father", "The King", "The Twin"];

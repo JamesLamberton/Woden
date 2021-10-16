@@ -13,3 +13,24 @@ else{
 
 	oHero.prologue = 0;	
 }
+if oWoden.wMoving{
+	x -= hsp;	
+	
+}
+if (x <= 0) and (page != page_max) and spriteToggle{
+	spriteToggle = 0;
+	guide = instance_create_layer(x+1500,y,"Instances",oGuidance);
+	guide.hsp = 3;
+	guide.page = page;
+	guide.sprite_index = frames[page];
+}
+if (x <= -100){
+	if (page == page_max){
+		instance_create_layer(x+600,y,"Instances",oBegin);
+		
+	}
+	instance_destroy();
+
+}
+
+	

@@ -17,8 +17,9 @@ if point_in_rectangle(mousex,mousey,x,y+250,x+string_width(button),y+250+string_
 	draw_text(x,y+250,button);
 	if left_click{
 		mouse_click = 1;
-		oEncounter.eContinue = 1;
+		
 		instance_destroy();
+		oEncounter.eContinue = 1;
 	}
 }
 
