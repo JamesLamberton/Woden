@@ -13,7 +13,18 @@
 
 ////Draw surface in game
 //draw_surface(water_surf, 100, 100);
+with(oMountains) {
+	draw_sprite_ext(sprite_index, image_index, x,900, image_xscale, -image_yscale*other.reflection, 0, -1,1);
 
+}
+with(oHill2) {
+	draw_sprite_ext(sprite_index, image_index, x,900, image_xscale, -image_yscale*other.reflection, 0, -1,1);
+
+}
+with(oHill1) {
+	draw_sprite_ext(sprite_index, image_index, x,900, image_xscale, -image_yscale*other.reflection, 0, -1,1);
+
+}
 with(oFollower) {
 	draw_sprite_ext(sprite_index, image_index, x, (y+other.yoff*2), image_xscale, -image_yscale*other.reflection, 0, -1,1);
 }
@@ -33,3 +44,4 @@ with(oEncounter) {
 	draw_sprite_ext(sprite_index, image_index, x, (y+other.yoff*2), image_xscale, -image_yscale*other.reflection, 0, -1,1);
 
 }
+

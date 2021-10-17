@@ -13,5 +13,5 @@ spriteToggle = 1;
 impacts = [20,6,20,90,"",0];
 hsp = 3;
 
-frames = [sFrame1,sFrame2,sFrame1,sFrame1,sFrame1,sFrame1];
+frames = [sFrame1,sFrame2,sFrame3,sFrame4,sFrame5,sFrame6];
 sprite_index = frames[page];

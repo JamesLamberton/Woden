@@ -7,10 +7,10 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 146,
-  "bbox_right": 999,
-  "bbox_top": 0,
-  "bbox_bottom": 212,
+  "bbox_left": 164,
+  "bbox_right": 899,
+  "bbox_top": 13,
+  "bbox_bottom": 214,
   "HTile": false,
   "VTile": false,
   "For3D": false,
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"82494fa5-4241-457a-bde9-d0a8ed54b271","path":"sprites/sFrame1/sFrame1.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"82494fa5-4241-457a-bde9-d0a8ed54b271","path":"sprites/sFrame1/sFrame1.yy",},"LayerId":{"name":"e549c7de-9278-4710-a2dd-6c0aef8b29f5","path":"sprites/sFrame1/sFrame1.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"sFrame1","path":"sprites/sFrame1/sFrame1.yy",},"resourceVersion":"1.0","name":"82494fa5-4241-457a-bde9-d0a8ed54b271","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"e9883966-afc1-4086-b01a-e531cede2016","path":"sprites/sFrame3/sFrame3.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"e9883966-afc1-4086-b01a-e531cede2016","path":"sprites/sFrame3/sFrame3.yy",},"LayerId":{"name":"7828e803-58c1-48e9-943b-e78475b65741","path":"sprites/sFrame3/sFrame3.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"sFrame3","path":"sprites/sFrame3/sFrame3.yy",},"resourceVersion":"1.0","name":"e9883966-afc1-4086-b01a-e531cede2016","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"sFrame1","path":"sprites/sFrame1/sFrame1.yy",},
+    "spriteId": {"name":"sFrame3","path":"sprites/sFrame3/sFrame3.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a4823558-cccf-48c6-a347-c30d749857a8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"82494fa5-4241-457a-bde9-d0a8ed54b271","path":"sprites/sFrame1/sFrame1.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"48bce383-1fc6-4289-aa54-5d91d2312c12","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e9883966-afc1-4086-b01a-e531cede2016","path":"sprites/sFrame3/sFrame3.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 213,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"sFrame1","path":"sprites/sFrame1/sFrame1.yy",},
+    "parent": {"name":"sFrame3","path":"sprites/sFrame3/sFrame3.yy",},
     "resourceVersion": "1.3",
-    "name": "sFrame1",
+    "name": "sFrame3",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"e549c7de-9278-4710-a2dd-6c0aef8b29f5","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"7828e803-58c1-48e9-943b-e78475b65741","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/Heros.yy",
   },
   "resourceVersion": "1.0",
-  "name": "sFrame1",
+  "name": "sFrame3",
   "tags": [],
   "resourceType": "GMSprite",
 }
