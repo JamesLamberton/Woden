@@ -7,7 +7,7 @@ if collision{
 	oHero.prologue = 0;
 	oHero.moving = 0;
 	oHero.moveToggle = 1;
-	instance_create_layer(1366/2,y+50,"Text",oTextbox_Result);
+	instance_create_layer(1366/2,y-100,"Text",oTextbox_Result);
 	oTextbox_Result.title = title;
 	oTextbox_Result.content = content;
 	oTextbox_Result.impacts = impacts;

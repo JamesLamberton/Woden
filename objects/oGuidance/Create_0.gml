@@ -11,7 +11,7 @@ next_page = 0;
 spriteToggle = 1;
 //[+intelligence, +followers, +food, +popularity, +special, +special amount]
 impacts = [20,6,20,90,"",0];
-hsp = 4;
+hsp = 3;
 
-frames = [sFrame1,sFrame1,sFrame1,sFrame1,sFrame1,sFrame1];
+frames = [sFrame1,sFrame2,sFrame1,sFrame1,sFrame1,sFrame1];
 sprite_index = frames[page];

@@ -30,15 +30,14 @@ if instance_exists(oTextbox_Result){
 			oHero.followers = oHero.followers*0.1
 			oHero.death = 1;
 		}
-		
 	}
-	
-
 }
 if collision{
+	
 	type_num = irandom_range(0,5);
 	size = irandom_range(2,10)*10;
 	full_name = name[irandom_range(0,8)] + suffix[type_num];
 	type = type_list[type_num]	
+	
 	
 }

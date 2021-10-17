@@ -46,8 +46,8 @@ if eContinue{
 		//text2.content = content_2;
 		//text2.button = "Begin";
 		oWoden.wMoving = 1;
-		oWoden.outro = 1;
-		instance_destroy();
+		//oWoden.outro = 1;
+		//instance_destroy();
 		
 	}
 }

@@ -6,6 +6,10 @@ else{
 	prologue = 0;
 }
 
+if keyboard_check_pressed(vk_space){
+	game_restart();	
+	
+}
 	
 if moving{
 	sprite_index = sHero_Walk;

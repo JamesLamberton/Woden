@@ -2,7 +2,7 @@ if collision{
 	eResult = 0;
 	eContinue = 0;
 	oHero.moving = 0;
-	instance_create_layer(1366/2,y+50,"Text",oTextbox);
+	instance_create_layer(1366/2,y-100,"Text",oTextbox);
 	oTextbox.title = title;
 	oTextbox.content = content;
 	collision = 0;
@@ -10,7 +10,7 @@ if collision{
 
 if eResult{
 	instance_destroy(oTextbox);
-	instance_create_layer(1366/2,y+50,"Text",oTextbox_Result);
+	instance_create_layer(1366/2,y-100,"Text",oTextbox_Result);
 	eResult = 0;
 }
 

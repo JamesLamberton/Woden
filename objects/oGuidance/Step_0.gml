@@ -17,19 +17,23 @@ if oWoden.wMoving{
 	x -= hsp;	
 	
 }
-if (x <= 0) and (page != page_max) and spriteToggle{
+if (x <= 100) and (page != page_max) and spriteToggle{
 	spriteToggle = 0;
-	guide = instance_create_layer(x+1500,y,"Instances",oGuidance);
+	guide = instance_create_layer(1366,y,"Instances",oGuidance);
 	guide.hsp = 3;
 	guide.page = page;
 	guide.sprite_index = frames[page];
 }
-if (x <= -100){
+if (x <= -1000){
 	if (page == page_max){
-		instance_create_layer(x+600,y,"Instances",oBegin);
+		//instance_create_layer(500,y-100,"Instances",oBegin);
+		oWoden.outro = 1;
 		
 	}
+	if (x <= -1000){
 	instance_destroy();
+	}
+	
 
 }
 

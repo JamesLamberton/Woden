@@ -1,5 +1,7 @@
 event_inherited();
-if collision{
+if collision and tToggle{
+	tToggle = 0;
+	show_debug_message("collision, toggle")
 name = ["Finnmork","Jokulsvikra","Mostr","Gnupverjahreppr","Auonar","Hafr","Folafotr","Landamot","Lonlond"]
 suffix = ["thorpe","thwaite","toft","keld","ness","by","kirk"]
 type_list = ["settlement","woodland village","small village","headland village","farmstead","monestary village"];

@@ -1,3 +1,4 @@
+tToggle = 1;
 name = ["Finnmork","Jokulsvikra","Mostr","Gnupverjahreppr","Auonar","Hafr","Folafotr","Landamot","Lonlond"]
 suffix = ["thorpe","thwaite","toft","keld","ness","by","kirk"]
 type_list = ["settlement","woodland village","small village","headland village","farmstead","monestary village"];

@@ -1,5 +1,4 @@
 /// @desc Our Beginning Hero, Sigi
-oToggle = 1;
 moving = 0;
 prologue = 0;
 prologue_end = 0;

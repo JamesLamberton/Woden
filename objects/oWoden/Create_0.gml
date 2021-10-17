@@ -5,6 +5,8 @@ intro = 0;
 collision = 0;
 tx = x+300;
 ty = y-150;
+sx = x+300;
+sy = y-200;
 outro = 0;
 hudToggle = 1;
 with (all){

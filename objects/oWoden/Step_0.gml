@@ -21,6 +21,7 @@ if outro{
 		alarm[0] = 3;
 		i = 40;
 		
+		
 
 	}
 

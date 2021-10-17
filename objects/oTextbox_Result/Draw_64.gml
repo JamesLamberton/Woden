@@ -2,7 +2,7 @@ draw_set_font(Norse_Font);
 
 draw_set_halign(fa_left);
 draw_text_ext_transformed(70,y+20,title,1,600,3,3,0);
-draw_set_font(arial);
+draw_set_font(feightBit);
 draw_text_ext_transformed(70,y+80,content,20,750,1,1,0);
 
 
@@ -32,7 +32,7 @@ for (var i = 0; i < 4; i++){
 		
 		draw_set_colour(c_white);
 		draw_set_halign(fa_left);
-		draw_text(1000,y+100+30*space,string(resource)+": "+string(amount));
+		draw_text(1000,y+100+30*space,string(resource)+":  "+string(amount));
 		space += 1;
 	}	
 }

@@ -15,16 +15,21 @@
 //draw_surface(water_surf, 100, 100);
 
 with(oFollower) {
-	draw_sprite_ext(sprite_index, image_index, x, (y+other.yoff), image_xscale, -image_yscale, 0, -1,1);
+	draw_sprite_ext(sprite_index, image_index, x, (y+other.yoff*2), image_xscale, -image_yscale*other.reflection, 0, -1,1);
 }
 
 
 with(oHero) {
-	draw_sprite_ext(sprite_index, image_index, x, (y+other.yoff), image_xscale, -image_yscale, 0, -1,1);
+	draw_sprite_ext(sprite_index, image_index, x, (y+other.yoff*2), image_xscale, -image_yscale*other.reflection, 0, -1,1);
 
 }
 
-with(oGround) {
-	draw_sprite_ext(sprite_index, image_index, x, (y+other.yoff), image_xscale, -image_yscale, 0, -1,1);
+//with(oGround) {
+//	draw_sprite_ext(sprite_index, image_index, x, (y+other.yoff), image_xscale, -image_yscale*other.reflection, 0, -1,1);
+
+//}
+
+with(oEncounter) {
+	draw_sprite_ext(sprite_index, image_index, x, (y+other.yoff*2), image_xscale, -image_yscale*other.reflection, 0, -1,1);
 
 }
