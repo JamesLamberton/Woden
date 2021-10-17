@@ -3,7 +3,14 @@
 if oHero.moving{
 	x -= hsp
 }
-if (x <= -52){
-	x += 1500;	
+if (x <= -192){
+	x += 1700;	
 	
 }
+
+if instance_exists(oWoden){
+	if oWoden.wMoving and !oWoden.outro{
+		x -= hsp
+	}
+}
+
