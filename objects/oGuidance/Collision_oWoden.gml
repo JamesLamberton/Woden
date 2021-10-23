@@ -2,9 +2,8 @@ if collision and !avoid{
 	eContinue = 0;
 	oWoden.wMoving = 0;
 	oWoden.intro = 0;
-	text = instance_create_layer(1366/2,20,"Text",oTextbox_Guide);
+	text = instance_create_layer(1366/2,8,"Text",oTextbox_Guide);
 	text.title = title;
-	show_debug_message(content[page]);
 	text.content = content[page];
 	text.button = "Continue \n"+string(page+1)+"/"+string(page_max);
 	collision = 0;

@@ -31,8 +31,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Encounters",
-    "path": "folders/Objects/Encounters.yy",
+    "name": "Plot",
+    "path": "folders/Objects/Plot.yy",
   },
   "resourceVersion": "1.0",
   "name": "oBegin",

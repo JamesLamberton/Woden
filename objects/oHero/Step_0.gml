@@ -6,10 +6,16 @@ else{
 	prologue = 0;
 }
 
-if keyboard_check_pressed(vk_space){
+if keyboard_check_pressed(ord("R")){
 	game_restart();	
 	
 }
+window_set_fullscreen(false);
+if keyboard_check_pressed(ord("Q")){
+	game_end();	
+	
+}
+
 	
 if moving{
 	sprite_index = sHero_Walk;
@@ -23,12 +29,12 @@ else {
 
 
 // kill hero
-if !prologue and prologue_end and ((intelligence <= 0) or (popularity <= 0) or (old_age == 7) or (death and oEncounter.eContinue and oEncounter.collision)){
+if canDie and moving and ((popularity <= 0) or (old_age == 7) or (death and oEncounter.eContinue and oEncounter.collision) or (!followers and !food)){
 	death = 0;
 	if (lineage < 2){
 		//you lose
 		moving = 0;
-		instance_create_layer(1366/2,480,"Text",oTextbox_Dead);
+		instance_create_layer(1366/2,y-220,"Text",oTextbox_Dead);
 	}
 	else{
 	order += 1;

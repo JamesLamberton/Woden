@@ -19,7 +19,7 @@ if outro{
 	if (x >= 1400) and hudToggle{
 		hudToggle = 0;
 		alarm[0] = 3;
-		i = 40;
+		i = 60;
 		
 		
 

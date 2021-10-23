@@ -7,7 +7,8 @@ if instance_exists(oTextbox){
 
 }
 
-if instance_exists(oTextbox_Result){
+if instance_exists(oTextbox_Result) and cToggle{
+	cToggle = 0;
 	oTextbox_Result.title = "The Mysterious Man";
 	if (oHero.selected == option_a){
 		oTextbox_Result.content = option_a_result;

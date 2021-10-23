@@ -1,7 +1,7 @@
 /// @desc Our Beginning Hero, Sigi
 moving = 0;
 prologue = 0;
-prologue_end = 0;
+canDie = 0;
 hsp = 3;
 age = 25;
 intelligence = 0;
@@ -17,7 +17,7 @@ name_list = ["Sigi","Rerir","Volsung","Sigmund"];
 title_list = ["The Outlaw","The Father", "The King", "The Twin"];
 order = 0;
 name = name_list[order];
-son_name = "";
+son_name = "Rerir";
 if (order > 3){
 	son_name = name_list[order+1];
 }

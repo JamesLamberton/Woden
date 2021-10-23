@@ -24,17 +24,10 @@ if (x <= 100) and (page != page_max) and spriteToggle{
 	guide.page = page;
 	guide.sprite_index = frames[page];
 }
-if (x <= -1000){
+if (x <= -600){
 	if (page == page_max){
-		//instance_create_layer(500,y-100,"Instances",oBegin);
 		oWoden.outro = 1;
 		
 	}
-	if (x <= -1000){
 	instance_destroy();
-	}
-	
-
 }
-
-	

@@ -9,5 +9,9 @@ if invisible{
 	
 }
 if (image_alpha <= 0){
+	instance_destroy(oAir);
+	instance_destroy();	
+}
+if (x <= -500){
 	instance_destroy();	
 }

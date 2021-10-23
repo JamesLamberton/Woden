@@ -1,1 +1,0 @@
-newMysteriousMan = 1;

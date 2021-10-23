@@ -3,7 +3,7 @@ draw_set_font(Norse_Font);
 draw_set_halign(fa_left);
 draw_text_ext_transformed(70,y+20,title,1,600,3,3,0);
 draw_set_font(feightBit);
-draw_text_ext_transformed(70,y+80,content,20,750,1,1,0);
+draw_text_ext_transformed(70,y+80,content,20,750,0.9,0.9,0);
 
 
 draw_text(x,y+250,button);

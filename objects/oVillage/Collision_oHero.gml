@@ -1,21 +1,23 @@
 event_inherited();
-if instance_exists(oTextbox){
 
-	oTextbox.option_a = option_a;
-	oTextbox.option_b = option_b;
-	oTextbox.option_c = option_c;
 
-}
-
-if instance_exists(oTextbox_Result){
+if instance_exists(oTextbox_Result) and cToggle{
+	cToggle = 0;
 	oTextbox_Result.title = full_name;
 	if (oHero.selected == option_a){
-		oTextbox_Result.content = option_a_result;
-		oTextbox_Result.impacts = option_a_impacts;
+		oTextbox_Result.content = option_a_result_sucess;
+		oTextbox_Result.impacts = option_a_impact_sucess;
 	}
 	if (oHero.selected == option_b){
-		oTextbox_Result.content = option_b_result;
-		oTextbox_Result.impacts = option_b_impacts;
+
+		oTextbox_Result.impacts = option_b_impact_sucess;
+		if wife{
+			oHero.wife = 1;
+			oTextbox_Result.content = option_b_result_wife;
+		}
+		else{
+			oTextbox_Result.content = option_b_result_sucess;
+		}
 		
 		
 	}
@@ -23,11 +25,11 @@ if instance_exists(oTextbox_Result){
 		
 		if (diff >= 0){
 			oTextbox_Result.content = option_c_result_sucess;
-			oTextbox_Result.impacts = option_c_impacts;
+			oTextbox_Result.impacts = option_c_impact_sucess;
 		}
 		else{
 			oTextbox_Result.content = option_c_result_failure;
-			oHero.followers = oHero.followers*0.1
+			oTextbox_Result.impacts = option_c_impact_failure;
 			oHero.death = 1;
 		}
 	}

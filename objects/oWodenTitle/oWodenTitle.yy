@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Encounters",
-    "path": "folders/Objects/Encounters.yy",
+    "name": "UI_Text",
+    "path": "folders/Objects/UI_Text.yy",
   },
   "resourceVersion": "1.0",
   "name": "oWodenTitle",
