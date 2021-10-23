@@ -9,7 +9,7 @@ if collision and tToggle{
 
 	option_b = "Hunt Beast.";
 	option_b_result_sucess = "peeps die";
-	option_b_impact_sucess = [0,-10,0,5,"",0];
+	option_b_impact_sucess = [0,-5,+25,-5,"",0];
 
 
 	option_c = "Avoid.";
