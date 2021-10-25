@@ -40,6 +40,9 @@ else{
 		option_b_result_sucess = option_b_result_sucess + "The time to rest allows bonds to be made between "+oHero.name+" and his wife. Not long into the stay, the Volsung family are blessed with a son; "+oHero.son_name+". The men rejoice as the Volsung family strengthens and follows the path to greatness. Many men from "+full_name+" flock to the band in hopes to see the Age of "+oHero.son_name+".";
 		option_b_impact_sucess = [0,10,15,+15,"A son",1]	
 	}
+	else{
+		option_b_impact_sucess = [2,2,15,-15,"",0]	
+	}
 }
 
 

@@ -15,6 +15,7 @@ var left_click = mouse_check_button_pressed(mb_left);
 
 if point_in_rectangle(mousex,mousey,x,y+250,x+string_width("Try again next cycle"),y+250+string_height("Try again next cycle")){
 	draw_set_colour(c_orange);
+	draw_set_halign(fa_center);
 	draw_text(x,y+250,"Try again next cycle");
 	if left_release{
 		mouse_click = 0;

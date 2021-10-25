@@ -1,9 +1,10 @@
 /// @desc Our Beginning Hero, Sigi
+randomise();
 moving = 0;
 prologue = 0;
 canDie = 0;
 hsp = 3;
-age = 25;
+age = 18;
 intelligence = 0;
 followers = 0;
 current_followers = 0;
@@ -29,6 +30,6 @@ old_age = 0;
 selected = "";
 inst = 0;
 death = 0;
-bonus = 0;
+bonus = 1;
 wife = 0;
 son = 0;

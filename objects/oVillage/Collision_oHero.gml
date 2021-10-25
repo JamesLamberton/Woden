@@ -9,14 +9,16 @@ if instance_exists(oTextbox_Result) and cToggle{
 		oTextbox_Result.impacts = option_a_impact_sucess;
 	}
 	if (oHero.selected == option_b){
-
+		show_debug_message(option_b_impact_sucess)
 		oTextbox_Result.impacts = option_b_impact_sucess;
 		if wife{
 			oHero.wife = 1;
 			oTextbox_Result.content = option_b_result_wife;
+			oTextbox_Result.impacts = option_b_impact_sucess;
 		}
 		else{
 			oTextbox_Result.content = option_b_result_sucess;
+			oTextbox_Result.impacts = option_b_impact_sucess;
 		}
 		
 		
