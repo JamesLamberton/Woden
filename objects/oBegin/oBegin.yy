@@ -1,10 +1,10 @@
 {
   "spriteId": {
-    "name": "sEncounter",
-    "path": "sprites/sEncounter/sEncounter.yy",
+    "name": "Empty",
+    "path": "sprites/Empty/Empty.yy",
   },
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {

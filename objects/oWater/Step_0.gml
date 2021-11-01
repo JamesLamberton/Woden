@@ -12,7 +12,6 @@ if (x == -701){
 	
 }
 if (x == -702){
-	show_debug_message("hi")
 	x = 2050;	
 	
 }

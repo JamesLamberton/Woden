@@ -10,10 +10,19 @@ if keyboard_check_pressed(ord("R")){
 	game_restart();	
 	
 }
-window_set_fullscreen(false);
+window_set_fullscreen(true);
 if keyboard_check_pressed(ord("Q")){
 	game_end();	
 	
+}
+if keyboard_check_pressed(ord("Z")){
+	wife = 1;
+}
+if keyboard_check_pressed(ord("X")){
+	son = 1;
+}
+if keyboard_check_pressed(ord("C")){
+	death = 1;
 }
 
 	
@@ -31,23 +40,23 @@ else {
 // kill hero
 if canDie and moving and ((popularity <= 0) or (old_age == 7) or (death and oEncounter.eContinue and oEncounter.collision) or (!followers and !food)){
 	death = 0;
-	if (lineage < 2){
+	if !son{
 		//you lose
 		moving = 0;
 		instance_create_layer(1366/2,y-220,"Text",oTextbox_Dead);
 	}
 	else{
 	order += 1;
-	lineage -= 1;
 	name = name_list[order];
 	title = title_list[order];
-	if (order > 3){
+	if (order < 3){
 	son_name = name_list[order+1];
 	}
 	else{
 		order = 0;
 	}
 	son = 0;
+	wife = 0;
 	age -= 20;
 	intelligence = 20;
 	popularity = 100;

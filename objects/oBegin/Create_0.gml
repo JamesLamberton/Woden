@@ -15,3 +15,4 @@ impacts = [20,6,20,90,"",0];
 hsp = 0;
 eResult = 0;
 eContinue = 0;
+image_alpha = 0;

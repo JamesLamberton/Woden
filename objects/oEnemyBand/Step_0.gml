@@ -1,6 +1,6 @@
 event_inherited();
 if collision and tToggle{
-	size = irandom_range(2,7)*10;
+	size = irandom_range(1,5)*10;
 	title = "An Enemy Approaches";
 	content = "War looms over the horision, as "+oHero.name+"'s scouts report a rival warband heading straight towards the camp. The scouts inform "+oHero.name+" that the band holds     "+string(size)+" men, and that there is little time to pack the camp and retreat before the band arrives.";
 	option_a = "Fight, many of Odin's warriors will enter Valhalla today.";

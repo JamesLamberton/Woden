@@ -81,8 +81,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Fauna",
-    "path": "folders/Sprites/Fauna.yy",
+    "name": "Environment",
+    "path": "folders/Sprites/Environment.yy",
   },
   "resourceVersion": "1.0",
   "name": "sWater",
