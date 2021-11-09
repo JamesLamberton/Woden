@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "oEncounter",
-    "path": "objects/oEncounter/oEncounter.yy",
+    "name": "oEncounter1",
+    "path": "objects/oEncounter1/oEncounter1.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

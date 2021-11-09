@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "oEncounter",
-    "path": "objects/oEncounter/oEncounter.yy",
+    "name": "oEncounter1",
+    "path": "objects/oEncounter1/oEncounter1.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Encounters",
-    "path": "folders/Objects/Encounters.yy",
+    "name": "oldEncounters",
+    "path": "folders/Objects/Encounters/oldEncounters.yy",
   },
   "resourceVersion": "1.0",
   "name": "oRuinedVillage",

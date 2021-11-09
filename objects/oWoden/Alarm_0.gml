@@ -8,7 +8,7 @@ if (i > 0){
 	i -= 1;
 }
 else{
-	instance_create_layer(500,y,"Instances",oBegin);
+	instance_create_layer(500,y,"Instances",oEncounter);
 	instance_destroy();
 }
 alarm[0] = 1;

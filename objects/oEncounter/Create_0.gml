@@ -1,29 +1,45 @@
-hsp = 3;
-tToggle = 1;
-cToggle = 1;
-collision = 1;
-eContinue = 1;
-eResult = 1;
+event_inherited();
+//toggles
+nCollision = 1;
+cCollision = 0;
 completed = 0;
-title = "Title"
-content = "Content"
-option_a = "a";
-option_a_condition = 1;
-option_a_result_sucess = "as";
-option_a_impact_sucess = [0,0,0,0,"",0];
-option_a_result_failure = "af";
-option_a_impact_failure = [0,0,0,0,"",0];
-option_b = "b";
-option_b_condition = 1;
-option_b_result_sucess = "bs";
-option_b_impact_sucess = [0,0,0,0,"",0];
-option_b_result_failure = "bf";
-option_b_impact_failure = [0,0,0,0,"",0];
-option_c = "c";
-option_c_condition = 1;
-option_c_result_sucess = "cs";
-option_c_impact_sucess = [0,0,0,0,"",0];
-option_c_result_failure = "cf";
-option_c_impact_failure = [0,0,0,0,"",0];
-size = irandom_range(2,7)*10;
-//[+intelligence, +followers, +food, +popularity, +special]
+choice = "";
+result = [];
+alpha = 0;
+
+
+//content
+text = "this is where the text goes";
+At = "option a";
+Ap = true;
+Ar = true;
+As = [1,1,-20,30];
+Af = [0,0,0,0];
+
+Bt = "option b";
+Bp = true;
+Br = true;
+Bs = [1,1,50,-10];
+Bf = [0,0,0,0];
+
+Ct = "option c";
+Cp = true;
+Cr = true;
+Cs = [0,0,1,15];
+Cf = [0,0,0,0];
+
+
+/*
+t = text
+p = prereq (t/f)
+r = requirements to succeed (t/f)
+s = sucess impact if r
+f = failure impact if !r
+[food,int,morale,men]
+
+
+
+
+
+
+*/

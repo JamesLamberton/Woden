@@ -8,8 +8,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "oGround",
-    "path": "objects/oGround/oGround.yy",
+    "name": "oEnvironment",
+    "path": "objects/oEnvironment/oEnvironment.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,

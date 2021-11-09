@@ -10,7 +10,7 @@ if keyboard_check_pressed(ord("R")){
 	game_restart();	
 	
 }
-window_set_fullscreen(true);
+window_set_fullscreen(false);
 if keyboard_check_pressed(ord("Q")){
 	game_end();	
 	
@@ -66,14 +66,35 @@ if canDie and moving and ((popularity <= 0) or (old_age == 7) or (death and oEnc
 	
 	
 }
+if popularity < 0{
+	popularity = 0;	
+}
+else if popularity > 180{
+	popularity = 180;	
+}
+if food < 0{
+	food = 0;
+}
+if intelligence < 0{
+	intelligence = 0;
+}
+if followers < 0{
+	followers = 0;
+}
+
 
 if (current_followers > followers){
 	inst = instance_find(oFollower, irandom(instance_number(oFollower) - 1));
 	instance_destroy(inst);
 	current_followers -= 1;
 }
-if (current_followers < followers){
+if (current_followers < followers and current_followers < followerlimit){
 	follower = instance_create_layer(self.x - 60 - random_range(0,350) ,self.y,"Instances",oFollower);
 	follower.image_index = random_range(1,7);
 	current_followers += 1;
+	
 }
+
+
+
+

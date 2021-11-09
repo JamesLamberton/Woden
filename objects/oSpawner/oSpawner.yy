@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Encounters",
-    "path": "folders/Objects/Encounters.yy",
+    "name": "newEncounters",
+    "path": "folders/Objects/Encounters/newEncounters.yy",
   },
   "resourceVersion": "1.0",
   "name": "oSpawner",
