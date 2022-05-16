@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sBackground_Snow","path":"sprites/sBackground_Snow/sBackground_Snow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sBackground_Snow",
     "tags": [],
     "resourceType": "GMSequence",

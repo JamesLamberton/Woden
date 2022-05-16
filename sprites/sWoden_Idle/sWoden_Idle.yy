@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sWoden_Idle","path":"sprites/sWoden_Idle/sWoden_Idle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sWoden_Idle",
     "tags": [],
     "resourceType": "GMSequence",

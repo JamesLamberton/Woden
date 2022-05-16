@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sIce","path":"sprites/sIce/sIce.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sIce",
     "tags": [],
     "resourceType": "GMSequence",

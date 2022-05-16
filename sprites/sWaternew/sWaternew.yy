@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sWaternew","path":"sprites/sWaternew/sWaternew.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sWaternew",
     "tags": [],
     "resourceType": "GMSequence",

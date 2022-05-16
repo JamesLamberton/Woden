@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sWaterBack","path":"sprites/sWaterBack/sWaterBack.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sWaterBack",
     "tags": [],
     "resourceType": "GMSequence",

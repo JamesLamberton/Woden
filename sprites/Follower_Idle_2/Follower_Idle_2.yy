@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Follower_Idle_2","path":"sprites/Follower_Idle_2/Follower_Idle_2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Follower_Idle_2",
     "tags": [],
     "resourceType": "GMSequence",

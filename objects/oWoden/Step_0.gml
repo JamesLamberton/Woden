@@ -6,6 +6,11 @@ else {
 	sprite_index = sWoden_Idle;
 
 }
+if place_meeting(x,y,oGuidance){
+	collision = 1;
+}
+
+
 if intro and !collision{
 	wMoving = 1;
 	x -= 1;

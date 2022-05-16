@@ -5,3 +5,4 @@ if oHero.moving{
 else{
 	instance_destroy();
 }
+image_alpha =0;

@@ -12,14 +12,17 @@
 if oHero.followers <= 20{
 	sprite_idle_set = Follower_Idle;
 	sprite_walk_set = Follower_Walk;
+	oHero.menlvl= 1;
 }
 else if (oHero.followers > 20 and oHero.followers<= 40){
 	sprite_idle_set = Follower_Idle_2;
 	sprite_walk_set = Follower_Walk_2;
+	oHero.menlvl = 2;
 }
 else{
-	sprite_idle_set = Follower_Idle_2;
-	sprite_walk_set = Follower_Walk_2;
+	sprite_idle_set = Follower_Idle_3;
+	sprite_walk_set = Follower_Walk_3;
+	oHero.menlvl = 3;
 }
 
 if oHero.moving{

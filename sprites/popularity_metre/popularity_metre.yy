@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"popularity_metre","path":"sprites/popularity_metre/popularity_metre.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "popularity_metre",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sFoodUp","path":"sprites/sFoodUp/sFoodUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sFoodUp",
     "tags": [],
     "resourceType": "GMSequence",

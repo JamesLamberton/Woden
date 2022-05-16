@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Popularity_Background","path":"sprites/Popularity_Background/Popularity_Background.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Popularity_Background",
     "tags": [],
     "resourceType": "GMSequence",

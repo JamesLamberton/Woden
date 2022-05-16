@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sTitleShadow","path":"sprites/sTitleShadow/sTitleShadow.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sTitleShadow",
     "tags": [],
     "resourceType": "GMSequence",

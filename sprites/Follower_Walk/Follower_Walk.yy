@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Follower_Walk","path":"sprites/Follower_Walk/Follower_Walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Follower_Walk",
     "tags": [],
     "resourceType": "GMSequence",

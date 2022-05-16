@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sFrame5","path":"sprites/sFrame5/sFrame5.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sFrame5",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sEncounter","path":"sprites/sEncounter/sEncounter.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sEncounter",
     "tags": [],
     "resourceType": "GMSequence",

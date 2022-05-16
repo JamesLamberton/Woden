@@ -24,6 +24,7 @@ if place_meeting(x,y,oHero){
 	else{
 		oCollect_3.y = 1200; 
 	}
-	
+	draw_text_transformed_color(1366/2+1,301,text,0.8,0.8,0,c_black,c_black,c_black,c_black,alpha);
+	draw_text_transformed_color(1366/2,300,text,0.8,0.8,0,c_yellow,c_yellow,c_yellow,c_yellow,alpha*2);
 	
 }

@@ -1,41 +1,44 @@
 event_inherited();
+image_alpha = 0;
 //toggles
 nCollision = 1;
-cCollision = 0;
 completed = 0;
 choice = "";
 result = [];
 alpha = 0;
-
-
 //content
-text = "this is where the text goes";
-At = "option a";
+text = "pick up the obelisk to choose.";
+At = "What?";
 Ap = true;
 Ar = true;
-As = [1,1,-20,30];
+Ad = [false,[0,0,0,0]];
+As = [10,10,90,10];
 Af = [0,0,0,0];
 
-Bt = "option b";
+Bt = "okay";
 Bp = true;
 Br = true;
-Bs = [1,1,50,-10];
+Bd = [false,[0,0,0,0]];
+Bs = [10,10,90,10];
 Bf = [0,0,0,0];
 
-Ct = "option c";
+Ct = "huh?";
 Cp = true;
 Cr = true;
-Cs = [0,0,1,15];
+Cd = [false,[0,0,0,0]];
+Cs = [10,10,90,10];
 Cf = [0,0,0,0];
 
-
+total = 0;
 /*
 t = text
 p = prereq (t/f)
 r = requirements to succeed (t/f)
+d = draw; [0] = is it a draw (t/f) [1] = [food,int,morale,men] results
 s = sucess impact if r
 f = failure impact if !r
 [food,int,morale,men]
+
 
 
 

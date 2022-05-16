@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sFrame2","path":"sprites/sFrame2/sFrame2.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sFrame2",
     "tags": [],
     "resourceType": "GMSequence",

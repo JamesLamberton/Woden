@@ -33,3 +33,9 @@ wife = 0;
 son = 0;
 sprite_idle_set = Follower_Idle;
 sprite_walk_set = Follower_Walk;
+
+
+foodlvl = 1;
+intelligencelvl = 1;
+moralelvl = 2;
+menlvl = 0;

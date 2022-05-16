@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sVillageSmall","path":"sprites/sVillageSmall/sVillageSmall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sVillageSmall",
     "tags": [],
     "resourceType": "GMSequence",

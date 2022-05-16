@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sIntelUp","path":"sprites/sIntelUp/sIntelUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sIntelUp",
     "tags": [],
     "resourceType": "GMSequence",

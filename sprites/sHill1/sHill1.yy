@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sHill1","path":"sprites/sHill1/sHill1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sHill1",
     "tags": [],
     "resourceType": "GMSequence",

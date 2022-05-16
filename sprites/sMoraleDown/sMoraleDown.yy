@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sMoraleDown","path":"sprites/sMoraleDown/sMoraleDown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sMoraleDown",
     "tags": [],
     "resourceType": "GMSequence",

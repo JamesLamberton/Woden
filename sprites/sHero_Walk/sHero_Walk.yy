@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sHero_Walk","path":"sprites/sHero_Walk/sHero_Walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sHero_Walk",
     "tags": [],
     "resourceType": "GMSequence",

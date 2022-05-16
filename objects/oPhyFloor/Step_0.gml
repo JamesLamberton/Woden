@@ -32,3 +32,5 @@ with(oReward){
 	//	other.phy_active = true;
 	//}
 }
+
+image_alpha = 0;

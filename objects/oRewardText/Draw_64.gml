@@ -7,9 +7,6 @@ else{
 if a > 0{
 	a -= 0.01;
 	ypos -= 1;
-	
-	
-	
 }
 else{
 	instance_destroy()

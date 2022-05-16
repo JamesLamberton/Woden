@@ -28,6 +28,9 @@ if choice != "" {
 		if Ar{
 			result = As;
 		}
+		else if Ad[0]{
+			result = Ad[1];	
+		}
 		else{
 			result = Af;
 		}
@@ -37,6 +40,9 @@ if choice != "" {
 		if Br{
 			result = Bs;
 		}
+		else if Bd[0]{
+			result = Bd[1];	
+		}
 		else{
 			result = Bf;
 		}
@@ -45,6 +51,9 @@ if choice != "" {
 		choice = "";
 		if Cr{
 			result = Cs;
+		}
+		else if Cd[0]{
+			result = Cd[1];	
 		}
 		else{
 			result = Cf;
@@ -122,6 +131,33 @@ if result != false and completed{
 		o.phy_speed_y = -random_range(5,7);
 	}	
 	result = false;
+}
+
+if total != 0{
+text = total[0]
+At = total[1];
+Ap = total[2];
+Ar = total[3];
+Ad = total[4];
+As = total[5];
+Af = total[6];
+
+Bt = total[7];
+Bp = total[8];
+Br = total[9];
+Bd = total[10];
+Bs = total[11];
+Bf = total[12];
+
+Ct = total[13];
+Cp = total[14];
+Cr = total[15];
+Cd = total[16];
+Cs = total[17];
+Cf = total[18];
+
+total = 0;
+	
 }
 
 /*

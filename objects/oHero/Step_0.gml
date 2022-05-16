@@ -43,7 +43,6 @@ if canDie and moving and ((popularity <= 0) or (old_age == 7) or (death and oEnc
 	if !son{
 		//you lose
 		moving = 0;
-		instance_create_layer(1366/2,y-220,"Text",oTextbox_Dead);
 	}
 	else{
 	order += 1;
@@ -81,7 +80,43 @@ if intelligence < 0{
 if followers < 0{
 	followers = 0;
 }
+if food <= 0{
+	foodlvl= 0;
+}
+else if food <= 20{
+	foodlvl= 1;
+}
+else if food <= 40{
+	foodlvl = 2;
+}
+else{
+	foodlvl = 3;
+}
 
+if intelligence == 0{
+	intelligencelvl= 0;
+}
+else if (intelligence > 0 and intelligence <= 10){
+	intelligencelvl = 1;
+}
+else if (intelligence > 10 and intelligence <= 20){
+	intelligencelvl = 2;
+}
+else{
+	intelligencelvl = 3;
+}
+if popularity <= 0{
+	moralelvl = 0;	
+}
+else if popularity <= 60{
+	moralelvl= 1;
+}
+else if (popularity > 60 and popularity <= 120){
+	moralelvl = 2;
+}
+else{
+	moralelvl = 3;
+}
 
 if (current_followers > followers){
 	inst = instance_find(oFollower, irandom(instance_number(oFollower) - 1));

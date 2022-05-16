@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sEncounter",
-    "path": "sprites/sEncounter/sEncounter.yy",
+    "name": "sStone",
+    "path": "sprites/sStone/sStone.yy",
   },
   "solid": false,
   "visible": true,

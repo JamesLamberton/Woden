@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sMenDown","path":"sprites/sMenDown/sMenDown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sMenDown",
     "tags": [],
     "resourceType": "GMSequence",

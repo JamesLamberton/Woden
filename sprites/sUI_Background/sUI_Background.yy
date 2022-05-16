@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sUI_Background","path":"sprites/sUI_Background/sUI_Background.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sUI_Background",
     "tags": [],
     "resourceType": "GMSequence",

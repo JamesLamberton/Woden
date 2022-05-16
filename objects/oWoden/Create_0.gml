@@ -12,6 +12,7 @@ ex = x+300;
 ey = y-50;
 outro = 0;
 hudToggle = 1;
+page = 0;
 with (all){
 	if (layer == layer_get_id("UI_Instances")) or (layer == layer_get_id("UI_Background")){
 		y -= 300;	

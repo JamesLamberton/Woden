@@ -83,7 +83,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sWoden_Walk","path":"sprites/sWoden_Walk/sWoden_Walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sWoden_Walk",
     "tags": [],
     "resourceType": "GMSequence",

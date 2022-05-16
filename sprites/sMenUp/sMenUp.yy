@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"sMenUp","path":"sprites/sMenUp/sMenUp.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "sMenUp",
     "tags": [],
     "resourceType": "GMSequence",
