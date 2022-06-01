@@ -8,6 +8,7 @@ avoid = 0;
 guide = "";
 next_page = 0;
 spriteToggle = 1;
+spawnToggle = 1;
 //[+intelligence, +followers, +food, +popularity, +special, +special amount]
 impacts = [20,6,20,90,"",0];
 hsp = 3;

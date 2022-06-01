@@ -1,4 +1,6 @@
 chance = random_range(0,129);
+enemylvl = irandom_range(1,3);
+oHero.enemylvl = enemylvl;
 //if chance and newMysteriousMan{
 //	instance_create_layer(x,y,"Instances",oMysteriousMan);
 //	newMysteriousMan = 0;
@@ -16,7 +18,7 @@ if (chance < 20 and last != "BadWinter" and last2 != "BadWinter"){
 	phyObject = instance_create_layer(xs,ys,"Physics",oFirepit);
 	phyObject.phy_position_y = y - phyObject.sprite_height/2;
 	phyObject.phy_active = false;
-	encounter.total =  scriptEncounter("BadWinter",phyObject);
+	//encounter.total =  scriptEncounter("BadWinter",phyObject);
 	last2 = last;
 	last = "BadWinter";
 }
@@ -26,9 +28,11 @@ else if (chance >= 20 and chance < 40 and last != "EnemyBand" and last2 != "Enem
 	phyObject = instance_create_layer(xs,ys,"Physics",oFlag);
 	phyObject.phy_position_y = y - phyObject.sprite_height/2;
 	phyObject.phy_active = false;
-	encounter.total =  scriptEncounter("EnemyBand",phyObject);
+	//encounter.total =  scriptEncounter("EnemyBand",phyObject);
 	last2 = last;
 	last = "EnemyBand";
+	enemySprite = [sFlag_1,sFlag_2,sFlag_3];
+	phyObject.sprite_index = enemySprite[enemylvl-1];
 }
 else if (chance >= 40 and chance < 60 and last != "RuinedVillage" and last2 != "RuinedVillage"){
 	encounter = instance_create_layer(x,y,"Instances",oEncounter);
@@ -36,7 +40,7 @@ else if (chance >= 40 and chance < 60 and last != "RuinedVillage" and last2 != "
 	phyObject = instance_create_layer(xs,ys,"Physics",oRansacked);
 	phyObject.phy_position_y = y - phyObject.sprite_height/2;
 	phyObject.phy_active = false;
-	encounter.total =  scriptEncounter("RuinedVillage",phyObject);
+	//encounter.total =  scriptEncounter("RuinedVillage",phyObject);
 	last2 = last;
 	last = "RuinedVillage";
 }
@@ -48,7 +52,7 @@ else if (chance >=  60 and chance < 80 and last != "Wilderness" and last2 != "Wi
 	phyObject = instance_create_layer(xs,ys,"Physics",oFirepit);
 	phyObject.phy_position_y = y - phyObject.sprite_height/2;
 	phyObject.phy_active = false;
-	encounter.total =  scriptEncounter("Wilderness",phyObject);
+	//encounter.total =  scriptEncounter("Wilderness",phyObject);
 	last2 = last;
 	last = "Wilderness";
 }
@@ -58,7 +62,7 @@ else if(chance >= 100 and last != "Village" and last2 != "Village"){
 	phyObject = instance_create_layer(xs,ys,"Physics",oSign);
 	phyObject.phy_position_y = y - phyObject.sprite_height/2;
 	phyObject.phy_active = false;
-	encounter.total =  scriptEncounter("Village",phyObject);
+	//encounter.total =  scriptEncounter("Village",phyObject);
 	last2 = last;
 	last = "Village";
 }

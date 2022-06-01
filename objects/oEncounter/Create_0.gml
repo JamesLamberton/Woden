@@ -6,6 +6,7 @@ completed = 0;
 choice = "";
 result = [];
 alpha = 0;
+elvl = 0;
 //content
 text = "pick up the obelisk to choose.";
 At = "What?";

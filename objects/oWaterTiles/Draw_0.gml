@@ -33,6 +33,10 @@ with(oGround) {
 	draw_sprite_ext(sprite_index, image_index, x, (y+(other.y-y)+(other.y-y)*0.7), image_xscale, -image_yscale*other.reflection, 0, -1,1);
 
 }
+with(oSmoke) {
+	draw_sprite_ext(sprite_index, image_index, x, (y+(other.y-y)+(other.y-y)*0.7), image_xscale, -image_yscale*other.reflection, 0, -1,1);
+
+}
 
 with(oFollower) {
 	draw_sprite_ext(sprite_index, image_index, x, (y+other.yoff*2), image_xscale, -image_yscale*other.reflection, 0, -1,1);

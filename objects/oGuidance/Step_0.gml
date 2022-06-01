@@ -33,7 +33,12 @@ if (x <= 300) and (oWoden.page != page_max) and spriteToggle{
 if (x <= -600){
 	if (oWoden.page == page_max){
 		oWoden.outro = 1;
-		
 	}
 	instance_destroy();
+}
+if (x <= 100 && spawnToggle){
+	if (oWoden.page == page_max){
+		spawnToggle = 0;
+		instance_create_layer(1400,400,"Men",oStone);
+	}
 }

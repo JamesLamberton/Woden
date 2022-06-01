@@ -39,3 +39,4 @@ foodlvl = 1;
 intelligencelvl = 1;
 moralelvl = 2;
 menlvl = 0;
+enemylvl = 0;

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sHero_Idle",
-    "path": "sprites/sHero_Idle/sHero_Idle.yy",
+    "name": "sHero_Walk_Updated",
+    "path": "sprites/sHero_Walk_Updated/sHero_Walk_Updated.yy",
   },
   "solid": false,
   "visible": true,

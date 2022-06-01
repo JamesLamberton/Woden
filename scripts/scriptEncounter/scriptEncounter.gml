@@ -1,35 +1,33 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scriptEncounter(encounter,object){
-menNumbers = [0,floor(oHero.followers/2),19,39];
-foodNumbers = [0,floor(oHero.food/2),19,39];
-IntelNumbers = [0,9,19];
-enemylvl = irandom_range(1,3);
-
+function scriptEncounter(encounter,object,enemylvl){
+menNumbers = [0,ceil(oHero.followers/2),19,39];
+foodNumbers = [0,ceil(oHero.food/2),19,39];
+IntelNumbers = [0,9,19,39];
 
 if encounter == "Village"{
 villageType = ["village","town","city"];
 text = "There is a "+villageType[enemylvl-1]+" nearby.";
 At = "Recruit";
-Ap = true;
+Ap = oHero.foodlvl >= enemylvl-1;
 Ar = true;
 Ad = [false,[0,0,0,0]];
-As = [0,0,0,5*enemylvl];
+As = [-5*enemylvl,0,5*enemylvl,10*enemylvl];
 Af = [0,0,0,0];
 
 Bt = "Rest";
 Bp = true;
 Br = true;
 Bd = [false,[0,0,0,0]];
-Bs = [10,0,-10,0];
+Bs = [10*enemylvl,0,-10,0];
 Bf = [0,0,0,0];
 
 Ct = "Raid";
-Cp = true;
+Cp = oHero.menlvl >= enemylvl;
 Cr = oHero.menlvl > enemylvl;
-Cd = [oHero.menlvl == enemylvl,[5*enemylvl,0,10*enemylvl,-(oHero.followers-menNumbers[enemylvl])]];
-Cs = [5*enemylvl,0,10*enemylvl,0];
-Cf = [0,0,0,-oHero.followers];
+Cd = [oHero.menlvl == enemylvl,[5*enemylvl,0,10*enemylvl,-floor(oHero.followers/2)]];
+Cs = [5*enemylvl,0,10*enemylvl,-floor(oHero.followers*(0.5-(oHero.menlvl-enemylvl)*0.25))];
+Cf = [0,0,0,-(oHero.followers+1)];
 }
 else if encounter == "BadWinter"{
 
@@ -56,30 +54,29 @@ Cs = [0,0,0,-(oHero.followers-menNumbers[oHero.menlvl])];
 Cf = [0,0,0,0];	
 }
 else if encounter == "EnemyBand"{
-show_debug_message(encounter);
-enemySprite = [sFlag_1,sFlag_2,sFlag_3];
+//enemySprite = [sFlag_1,sFlag_2,sFlag_3];
 enemyType = ["group","band","army"];
-object.sprite_index = enemySprite[enemylvl-1];
+//object.sprite_index = enemySprite[enemylvl-1];
 text = "An enemy "+enemyType[enemylvl-1]+" approaches.";
 At = "Fight";
 Ap = true;
 Ar = oHero.menlvl > enemylvl;
-Ad = [oHero.menlvl == enemylvl,[5*enemylvl,0,10*enemylvl,-(oHero.followers-menNumbers[enemylvl])]];
-As = [10*enemylvl,0,10*enemylvl,0];
-Af = [0,0,0,-oHero.followers];
+Ad = [oHero.menlvl == enemylvl,[5*enemylvl,0,10*enemylvl,-floor(oHero.followers/2)]];
+As = [10*enemylvl,0,10*enemylvl,-floor(oHero.followers*(0.5-(oHero.menlvl-enemylvl)*0.25))];
+Af = [0,0,0,-(oHero.followers+1)];
 
 Bt = "Ambush";
-Bp = oHero.intelligence >= enemylvl;
-Br = oHero.menlvl < enemylvl - 1;
-Bd = [oHero.menlvl == enemylvl - 1,[5*enemylvl,-10,10*enemylvl,-(oHero.followers-menNumbers[enemylvl])]];
-Bs = [10*enemylvl,0,10*enemylvl,0];
-Bf = [0,0,0,-oHero.followers];
+Bp = oHero.intelligencelvl >= enemylvl && oHero.menlvl <= enemylvl;
+Br = oHero.menlvl >= enemylvl - 1;
+Bd = [oHero.menlvl == (enemylvl - 1),[5*enemylvl,-10,10*enemylvl,-floor(oHero.followers/2)]];
+Bs = [10*enemylvl,0,10*enemylvl,-floor(oHero.followers*(0.25-(oHero.menlvl-enemylvl)*0.25))];
+Bf = [0,0,0,-(oHero.followers+1)];
 
 Ct = "Flee";
 Cp = true;
 Cr = true;
 Cd = [false,[0,0,0,0]];
-Cs = [0,0,-30/enemylvl,-(oHero.followers-menNumbers[oHero.menlvl])];
+Cs = [0,0,-30/enemylvl,-floor(oHero.followers*((oHero.menlvl-enemylvl)+2)/10)];
 Cf = [0,0,0,0];	
 }
 else if encounter == "RuinedVillage"{
@@ -118,7 +115,7 @@ Bt = "kill";
 Bp = oHero.menlvl >= 1;
 Br = true;
 Bd = [false,[0,0,0,0]];
-Bs = [20,0,0,-(oHero.followers-menNumbers[oHero.menlvl])];
+Bs = [20,0,0,-5];
 Bf = [0,0,0,0];
 
 Ct = "avoid";
