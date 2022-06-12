@@ -17,7 +17,7 @@ if place_meeting(phy_position_x,phy_position_y,oHero){
 	}
 	else if rewardType == "Morale"{
 		oHero.popularity += rewardAmount;
-		if (rewardAmount == 30){
+		if (rewardAmount == 45){
 			show_debug_message("You win!");
 			game_restart();
 		}

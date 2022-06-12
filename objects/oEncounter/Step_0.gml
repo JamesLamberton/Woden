@@ -11,7 +11,7 @@ if place_meeting(x,y,oHero){
 		oHero.moveToggle = 1;
 		nCollision = 0;
 		oDynamicParent.phy_active = true;
-		total = scriptEncounter(oSpawner.last,oSpawner.phyObject,oSpawner.enemylvl);
+		total = scriptEncounter(oSpawner.last,oSpawner.enemylvl);
 	}
 	if completed{
 		oHero.moving = 1;

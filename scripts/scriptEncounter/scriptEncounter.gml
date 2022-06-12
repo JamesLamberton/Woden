@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scriptEncounter(encounter,object,enemylvl){
+function scriptEncounter(encounter,enemylvl){
 menNumbers = [0,ceil(oHero.followers/2),19,39];
 foodNumbers = [0,ceil(oHero.food/2),19,39];
 IntelNumbers = [0,9,19,39];
@@ -26,7 +26,7 @@ Ct = "Raid";
 Cp = oHero.menlvl >= enemylvl;
 Cr = oHero.menlvl > enemylvl;
 Cd = [oHero.menlvl == enemylvl,[5*enemylvl,0,10*enemylvl,-floor(oHero.followers/2)]];
-Cs = [5*enemylvl,0,10*enemylvl,-floor(oHero.followers*(0.5-(oHero.menlvl-enemylvl)*0.25))];
+Cs = [5*enemylvl,0,15*enemylvl,-floor(oHero.followers*(0.5-(oHero.menlvl-enemylvl)*0.25))];
 Cf = [0,0,0,-(oHero.followers+1)];
 }
 else if encounter == "BadWinter"{
